@@ -48,9 +48,9 @@
 }
 
 .DropDown__Options > .Page__LeftMenu__Options{
-    padding-left: 10px;
+    padding-left: 20px;
     padding-top: 5px;
-
+    padding-bottom: 5px;
 }
 
 .HoverOptionsLeftMenu:hover{
@@ -103,6 +103,28 @@
     padding: 1px;
     padding-right: 3px;
     padding-left: 3px;;
+}
+
+.ProjectsDropDown{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.ProjectsDropDown:hover{
+    cursor: pointer;
+    background-color: #464646;
+}
+
+.DropDown{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 0;
+}
+
+.rotate{
+    transform: rotate(260deg);
 }
 
 .exit:hover{

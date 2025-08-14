@@ -1,5 +1,5 @@
-let pagesList = ['.AboutPage', '.QualificationsPage', '.StacksPage', '.ExperiencePage'];
-let menusList = ['.AboutMenu', '.QualificationsMenu', '.StacksMenu', '.ExperienceMenu'];
+let pagesList = ['.AboutPage', '.QualificationsPage', '.StacksPage', '.ExperiencePage', '.PlataformPage'];
+let menusList = ['.AboutMenu', '.QualificationsMenu', '.StacksMenu', '.ExperienceMenu', '.PlataformMenu'];
 let tabs = ['.About'];
 let activeTab = '';
 
@@ -55,6 +55,18 @@ function DeactivateAllMenus(){
     menusList.forEach(element => {
         document.querySelector(element).classList.remove('ActiveMenu');
     });
+    return;
+}
+
+function ToggleMenuDropDown(){
+    if(document.querySelector('.DropDown__Options').style.display != 'none'){
+        document.querySelector('.DropDown__Options').style.display = 'none';
+        document.querySelector('.svgRotation').classList.add('rotate');
+    }else{
+        document.querySelector('.DropDown__Options').style.display = 'block';
+        document.querySelector('.svgRotation').classList.remove('rotate');
+    }
+
     return;
 }
 
